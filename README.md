@@ -1,2 +1,2 @@
-# shop2you
-shop2You is a ecommerce website
+# MY_SHOP
+MY_SHOP is a ecommerce website
