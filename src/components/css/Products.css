@@ -1,0 +1,85 @@
+.category-item {
+    /* background-color: red; */
+    display: flex;
+    background-color: #D6E4E5;
+}
+.card_product{
+    position: relative;
+    color: white;
+
+    background-image: linear-gradient(to right, crimson, purple, rebeccapurple);
+
+    transform-style: preserve-3d;
+    transform: rotateX(36deg) rotateY(337deg)  
+/* perspective(5000px)  */
+}
+
+.card {
+    padding: 3px;
+    border-radius: 5%;
+    background-color: ghostwhite;
+    /* ............. */
+  
+}
+
+.card a img {
+    border-radius: 7%;
+}
+
+.card-img-top {
+
+    height: 280px;
+}
+
+.card-item {
+    padding-bottom: 23px;
+
+}
+
+.card-title {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ................................................... */
+.effect {
+    position: relative;
+    color: white;
+    padding: 2rem;
+    background-image: linear-gradient(to right, crimson, purple, rebeccapurple);
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 2rem;
+    transform-style: preserve-3d;
+    transform: perspective(5000px) rotateX(-10deg) rotateY(45deg)
+}
+
+.effect::before,
+.effect::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.effect::before {
+    background-image: linear-gradient(to right, white, lightgrey, grey);
+    display: block;
+    width: 350px;
+    height: 200px;
+    border-radius: inherit;
+    transform: translateZ(-60px);
+}
+
+.effect::after {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-40%) translateY(-45%) translateZ(-59px);
+    filter: blur(10px);
+    background-color: rgb(0, 0, 0, 0.7);
+    display: block;
+    width: 250px;
+    height: 170px;
+    border-radius: inherit;
+}

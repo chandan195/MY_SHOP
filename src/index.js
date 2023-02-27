@@ -1,13 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { Provider } from "react-redux";
+// import store from "./redux/store";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { PersistGate } from "redux-persist/integration/react";
+import { persistor, ReducerStore } from "./redux/reducers/index";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={ReducerStore}>  
+      {/* rapping redux store in app    ,use persist ReducerStore  for data handling*/}
+      <PersistGate persistor={persistor}>
+       
+        <App />
+       
+      </PersistGate>
+    </Provider>
   </React.StrictMode>
 );
 

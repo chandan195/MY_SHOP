@@ -1,0 +1,12 @@
+.slick-slide.slick-center img {
+    transform: scale(1.1,1);
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .slick-center {
+    background-color: red ;
+    } */
+    /* .card-slider{
+        transform-style: preserve-3d;
+        transform:rotateX(37deg) rotateY(36deg); 
+    } */

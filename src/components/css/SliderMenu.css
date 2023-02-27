@@ -1,0 +1,19 @@
+.auto-slider{
+    padding-top: 15px;
+  max-height: 10%;
+  background-color: #D6E4E5;
+}
+
+ .auto-slider .slider{
+    height: 320px;
+ }
+ @media (max-width: 768px) {
+  
+
+ }
+
+ @media (max-width: 600px){
+    .auto-slider{
+        display: none;
+      }
+ }

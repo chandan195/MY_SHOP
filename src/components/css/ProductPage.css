@@ -1,0 +1,23 @@
+.details-body{
+    display: flex;
+    justify-content: start;
+}
+.details{
+    padding-right: 3%;
+}
+
+ .percentage{
+    color: rgb(224, 60, 150);
+}
+/*   color: white;
+
+    background-image: linear-gradient(to right, crimson, purple, rebeccapurple);
+
+    */
+.card--product{
+    color: white;
+
+    background-image: linear-gradient(to right, crimson, purple, rebeccapurple);
+}
+
+
